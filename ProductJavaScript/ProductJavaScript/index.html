@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Product</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="class.js"></script>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-3">
+               <div class="card">
+                   <label>Product ID</label>
+                   <input type="text" class="form-control" id="pId" />
+                   <label>Product Name</label>
+                   <input type="text" class="form-control" id="pName" />
+                   <label>Price</label>
+                   <input type="text" class="form-control" id="pPrice" />
+                   <label>Stock</label>
+                   <input type="text" class="form-control" id="pStock" />
+                   <button class="btn btn-primary mx-auto mt-3" id="add">Ürün Ekle </button>
+                   
+               </div>
+           </div>
+           <div class="col-md-9">
+               <table class="table table-bordered">
+                   <thead>
+                       <tr>
+                           <td>Product Id</td>
+                           <td>Product Name</td>
+                           <td>Price</td>
+                           <td>Stock</td>
+                       </tr>
+                   </thead>
+                   <tbody id="ProductTable">
+                   </tbody>
+               </table>
+           </div>
+       </div>
+      
+   </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Product</title>
+</head>
+<body>
+    <div class=" container"> <!--containerı bir kutu gibi düşün.Büyük bir kutunun içerisinde işlemler yapılacak-->
+        <div class="row"> <!--Row oluşturacağımız grid (ızgara) yapısını birleştirmek için kullanılıyor-->
+        <div class="col-md-3"> <!--3'lük alan--> <!--Bu alan cardın içerisinde textlerin olduğu alan-->
+            <div class="card">
+                <label>Product ID</label>
+                <input type="text" class="form-control" id="Id"/>
+                <label>Product Name</label>
+                <input type="text" class="form-control" id="ProductName"/>
+                <label>Price</label>
+                <input type="text" class="form-control" id="Price"/>
+                <label>Stock</label>
+                <input type="text" class="form-control" id="Stock"/>
+                <button class="btn btn-primary mx-auto mt-3" id="buton">Ürün Ekle</button>
+
+            </div>
+        </div>
+        <div class="col-md-9"> <!--9'luk alan--> <!--Totalde 12lik alanlar oluşturuyoruz--> <!--Bu alan tabloların olduğu alan-->
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Product ID</td>
+                        <td>Product Name</td>
+                        <td>Price</td>
+                        <td>Stock</td>
+                    </tr>
+                </thead>
+                <tbody id="ProductTable">
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
